@@ -419,9 +419,6 @@ body{
     margin-top: 50px;
 }
 @media screen and (max-width:1280px){
-   body{
-    background-color: grey;
-   }
     .slide-image{
         max-height: 500px;
     }
@@ -456,9 +453,6 @@ body{
     }
 }
 @media screen and (max-width:1024px) {
-    body{
-        background-color: aquamarine;
-    }
    .offer p,h1{
         font-size: 13px;
     }
@@ -530,9 +524,6 @@ body{
 }
 
 @media screen and (max-width:640px) {
-    body{
-        background-color: beige;
-    }
     .offer p,h1{
         font-size: 8px;
     }
