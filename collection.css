@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-1{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    position: sticky;
+    top: 0;
+    z-index:9;
+    background-color: white;
+    color: rgb(24, 22, 44);
+}
+.nav-1 h1{
+    font-size: xx-large;
+}
+.nav-1_details{
+    display: flex;
+    gap: 30px;
+   
+}
+.nav-1_details a{
+    color: rgb(24, 22, 44);
+    text-decoration: none;
+    font-size: x-large;
+}
+.nav-1_details:hover{
+    cursor: pointer;
+}
+.nav-1_details p:hover{
+    text-decoration: underline;
+}
+
+/* For offer section */
+.offer{
+    background-color:rgb(24, 22, 44);
+    color: whitesmoke;
+    text-align: center;
+    font-size:large;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+.offer p{
+    margin-left: 30%;
+}
+#offer_close{
+    margin-left: 100px;
+}
+#offer_close:hover{
+    cursor: pointer;
+}
+.twenty{
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: larger;
+}
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    height: 100vh;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.search-bar {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+.search-bar button {
+    background-color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+/* Footer */
+.footer{
+    background-color: rgb(24, 22, 44);
+    height: 370px;
+}
+.footer_contents{
+    color: gainsboro;
+    margin-left: 30px;
+    font-size: x-large;
+    position: relative;
+    top: 40px;
+}
+.footer_contents img{
+    height: 50px;
+    margin-left: 30px;
+}
+.footer_contents p{
+    margin-top: 50px;
+}
+@media screen and (max-width:670px) {
+    .product-card{
+        height: 130px;
+        margin-top: 50px;
+    }
+    .product-card img{
+        height: 100%;
+    }
+    .product-card p{
+        font-size: 10px;
+    }
+    .offer p{
+        font-size: 8px;
+    }
+}
+@media screen and (max-width:475px) {
+    .offer p{
+        font-size: 10px;
+    }
+    .nav-1_details a{
+        font-size: 15px;
+    }
+    .search-bar{
+        width:200px;
+    }
+    .search-bar input{
+        width: 100%;
+    }
+    .product-card{
+        height: 80px;
+        margin-top: 50px;
+    }
+    .product-card img{
+        height: 100%;
+    }
+    .product-card p{
+        font-size: 10px;
+    }
+}
