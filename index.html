@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nostra</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- For menu open -->
+    <section class="menu_open">
+      <h1 id="menu_close">X</h1>
+      <div class="menu_open_contents">
+        <a href="./index.html"><p>Home</p></a>
+        <a href="#new_arrivals"><p>New Arrival</p></a>
+        <a href="#most_wanted"><p>Most Wanted</p></a>
+        <a href="#new_arrivals"><p>Collections</p></a>
+        <a href="./contact.html"><p>Contact Us</p></a>
+      </div>
+    </section>
+    <!-- Offer Section -->
+    <section class="offer">
+      <p>
+        Sign Up and <strong class="twenty">GET 20% OFF</strong> for your first
+        order
+      </p>
+      <h1 id="offer_close">X</h1>
+    </section>
+
+    <!-- Navbar Section -->
+    <nav class="nav-1">
+      <h1>Nostra</h1>
+      <div class="nav-1_details">
+        <a href="./index.html"><p>Home</p></a>
+        <a href="#new_arrivals"><p>New Arrival</p></a>
+        <a href="#most_wanted"><p>Most Wanted</p></a>
+        <a href="#new_arrivals"><p>Collections</p></a>
+        <a href="./contact.html"><p>Contact Us</p></a>
+      </div>
+      <img src="./img/menus.png" alt="menubar" id="menubar" />
+    </nav>
+
+    <div class="slideshow-container">
+      <!-- Slide 1 -->
+      <div class="slide fade">
+        <img src="./img/slide-1.jpg" alt="Slide 1" class="slide-image" />
+        <div class="text">
+          <h1>Level up your style with our</h1>
+          <p>Summer Collections</p>
+          <button>Shop Now ➔</button>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide fade">
+        <img src="./img/slide-1.jpg" alt="Slide 2" class="slide-image" />
+        <div class="text">
+          <h1>Explore the Best Styles</h1>
+          <p>New Arrivals Just For You</p>
+          <button id="dis_button">Discover Now ➔</button>
+        </div>
+      </div>
+
+      <!-- Navigation Arrows -->
+      <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+
+    <section class="brands">
+      <h2 style="margin-left: 30px">Brands</h2>
+      <div class="brands_img_container">
+        <div class="brands_img">
+          <img src="./brand-img/puma.png" alt="puma" />
+          <p>Puma</p>
+        </div>
+        <div class="brands_img">
+          <img src="./brand-img/adidas.png" alt="addidas" />
+          <p>Addidas</p>
+        </div>
+        <div class="brands_img">
+          <img src="./brand-img/simple.png" alt="simple" />
+          <p>Simple</p>
+        </div>
+        <div class="brands_img">
+          <img src="./brand-img/leaves.png" alt="leaves" />
+          <p>Leaves</p>
+        </div>
+        <div class="brands_img">
+          <img src="./brand-img/puma.png" alt="behance" />
+          <p>Behance</p>
+        </div>
+        <div class="brands_img">
+          <img src="./brand-img/twitch.png" alt="twitch" />
+          <p>Twitch</p>
+        </div>
+        <div class="brands_img">
+          <img src="./brand-img/leaves.png" alt="leaves" />
+          <p>Leaves</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expereience -->
+    <section class="exp">
+      <div class="container-1">
+        <div class="sub-container-1">
+          <h1>We Provide Best Customer Experiences</h1>
+        </div>
+        <div class="sub-container-2">
+          <p>
+            || We ensure that our customer have the best shopping experience
+          </p>
+        </div>
+      </div>
+      <div class="container-2">
+        <div class="con-2">
+          <img src="./logos/checked.png" alt="check image" />
+          <p>
+            Quality Guaranteed - "Top-quality products, always."
+          </p>
+        </div>
+        <div class="con-2">
+          <img src="./logos/happiness.png" alt="check image" />
+          <p>
+            Seamless Comfort - "Enjoy comfort with every wear."
+          </p>
+        </div>
+        <div class="con-2">
+          <img src="./logos/flying-broom-and-witch.png" alt="check image" />
+          <p>
+            Effortless Style - "Find your perfect fashion essentials."
+
+          </p>
+        </div>
+        <div class="con-2">
+          <img src="./logos/delivery-van.png" alt="check image" />
+          <p>
+            Swift Delivery - "Experience fast, reliable shipping."
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- New arrivals -->
+
+    <section class="new_arrivals" id="new_arrivals">
+      <h1>New Arrivals</h1>
+      <div class="new_arrivals_shirts">
+        <div class="card">
+          <div class="image">
+            <img src="./shirts/f1.jpg" alt="Shirt Image" />
+          </div>
+          <button class="shop-now">Shop Now ➔</button>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="./shirts/f2.jpg" alt="Shirt Image" />
+          </div>
+          <button class="shop-now">Shop Now ➔</button>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="./shirts/f3.jpg" alt="Shirt Image" />
+          </div>
+          <button class="shop-now">Shop Now ➔</button>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="./shirts/f4.jpg" alt="Shirt Image" />
+          </div>
+          <button class="shop-now">Shop Now ➔</button>
+        </div>
+      </div>
+    </section>
+<!-- Most wanted -->
+ <section class="container" id="most_wanted">
+        <h1>Most Wanted</h1>
+        <div class="products">
+            <!-- Product Cards -->
+            <div class="product-card">
+                <div class="image-container">
+                    <span class="sale-badge">sale</span>
+                    <img src="./shirts/n8.jpg" alt="Shirt 1">
+                    <span class="heart" onclick="toggleHeart(this)">&#9825;</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="image-container">
+                    <span class="sale-badge">sale</span>
+                    <img src="shirts/n4.jpg" alt="Shirt 2">
+                    <span class="heart" onclick="toggleHeart(this)">&#9825;</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="image-container">
+                    <span class="sale-badge">sale</span>
+                    <img src="./shirts/f4.jpg" alt="Shirt 3">
+                    <span class="heart" onclick="toggleHeart(this)">&#9825;</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="image-container">
+                    <span class="sale-badge">sale</span>
+                    <img src="./shirts/f1.jpg" alt="Shirt 4">
+                    <span class="heart" onclick="toggleHeart(this)">&#9825;</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="image-container">
+                    <span class="sale-badge">sale</span>
+                    <img src="./shirts/f3.jpg" alt="Shirt 5">
+                    <span class="heart" onclick="toggleHeart(this)">&#9825;</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="image-container">
+                    <span class="sale-badge">sale</span>
+                    <img src="./shirts/n4.jpg" alt="Shirt 6">
+                    <span class="heart" onclick="toggleHeart(this)">&#9825;</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="image-container">
+                    <span class="sale-badge">sale</span>
+                    <img src="./shirts/n3.jpg" alt="Shirt 7">
+                    <span class="heart" onclick="toggleHeart(this)">&#9825;</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="image-container">
+                    <span class="sale-badge">sale</span>
+                    <img src="./shirts/f4.jpg" alt="Shirt 8">
+                    <span class="heart" onclick="toggleHeart(this)">&#9825;</span>
+                </div>
+            </div>
+        </div>
+ </section>
+<!-- Limited Offer content -->
+ <section class="limited_offer">
+  <div class="limited_offer_image">
+    <img src="./img/slide-3.jpg" alt="img">
+  </div>
+  <div class="limited_offer_content">
+    <h1>Limited Offer</h1>
+    <h3>35% OFF on this for the first 30 Customers</h3>
+     <button>Shop Now ➔</button>
+
+  </div>
+ </section>
+ <!-- News Content -->
+ <section class="news">
+  <div class="news_content">
+    <h1>Join our News Letter</h1>
+    <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+    <input type="email" placeholder="Enter your Email"><br>
+      <button>Subscribe ➔</button>
+  </div>
+ </section>
+
+ <!-- Footer -->
+
+ <section class="footer">
+  <div class="footer_contents">
+    <h1>Nostra</h1>
+    <p>Your fashion destination for unique styles and premium quality.
+</p>
+    <img src="./footer_pics/instagram.png" alt="insta">
+    <img src="./footer_pics/twitter.png" alt="twitter">
+    <img src="./footer_pics/facebook.png" alt="facebook">
+    <p>@ 2025 nostra.com</p>
+  </div>
+ </section>
+    <script src="./script.js"></script>
+  </body>
+</html>

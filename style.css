@@ -1,0 +1,688 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    overflow-x: hidden;
+}
+
+/* For offer section */
+.offer{
+    background-color:rgb(24, 22, 44);
+    color: whitesmoke;
+    text-align: center;
+    font-size:large;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+.offer p{
+    margin-left: 30%;
+}
+#offer_close{
+    margin-left: 100px;
+}
+#offer_close:hover{
+    cursor: pointer;
+}
+.twenty{
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: larger;
+}
+
+/* For navbar */
+.nav-1{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index:9;
+}
+.nav-1_details{
+    width: 750px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-1_details a{
+    color:black;
+    text-decoration: none;
+}
+.nav-1_details:hover{
+    cursor: pointer;
+}
+.nav-1_details p:hover{
+    text-decoration: underline;
+}
+#menubar{
+    height: 20px;
+    width: 20px;
+    display: none;
+}
+/* For menu  */
+.menu_open{
+    left: 0;
+    background-color: rgb(24, 22, 44);
+    color:white;
+    height: 100vh;
+    width:50%;
+    position: fixed;
+    z-index: 10;
+    transition-duration: 1s;
+    display: none;
+}
+#menu_close{
+    font-size: larger;
+}
+.menu_open_contents{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    justify-content: space-around;
+}
+.menu_open_contents p{
+    font-size: larger;
+}
+.menu_open_contents a{
+    color:gainsboro;
+    text-decoration: none;
+}
+.menu_open h1{
+    margin-left: 200px;
+}
+.menu_open h1:hover{
+    cursor: pointer;
+}
+.menu_open_contents p{
+    margin-left: 20%;
+}
+.menu_open_contents p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* Slider image */
+
+.slideshow-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.slide {
+    display: none;
+    position: relative;
+    width: 100%;
+}
+
+.slide-image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    max-height: 500px;
+}
+
+.text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    color: white;
+    text-align: center;
+}
+
+.text h1 {
+    font-size: 60px;
+    margin-bottom: 0.5rem;
+}
+
+.text p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.text button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Arrows */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 100px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 15%;
+}
+
+.next {
+    right: 15%;
+}
+
+/* Animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* Brands */
+.brands_img_container{
+    display: flex;
+    justify-content: space-around;
+}
+.brands_img img{
+    height:70px;
+}
+.brands_img p{
+    margin-top: 0;
+    font-size: larger;
+    font-weight: 400;
+}
+
+/* Experience */
+.exp{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.container-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:x-large;
+}
+.sub-container-1,.sub-container-2{
+    margin: 0;
+}
+
+.container-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.con-2{
+    width:330px;
+    background-color: gainsboro;
+    padding: 10px;
+}
+.con-2 img{
+    height: 50px;
+}
+.con-2 p{
+    margin-top: 0;
+}
+
+/* New Arrivals */
+ .new_arrivals h1{
+    margin-left: 30px;
+}
+.new_arrivals_shirts{
+    display: flex;
+    justify-content: space-around;
+}
+ .card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s; /* Smooth image fade */
+}
+
+.card:hover .image img {
+    opacity: 0.3; /* Makes the image darker */
+}
+
+.shop-now {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.card:hover {
+    background-color: #000; /* Dark background when hovered */
+}
+
+.card:hover .shop-now {
+    transform: translate(-50%, -50%) scale(1.05); /* Slightly enlarges button */
+}
+/* For most wanted */
+
+.container {
+    margin: 20px;
+}
+
+.container h1 {
+    margin-left: 30px;
+}
+
+/* Scrolling Container */
+.products {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 20px;
+    scrollbar-width: none;
+}
+
+/* Product Card Style */
+.product-card {
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 300px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+.image-container {
+    position: relative;
+}
+.image-container img{
+    width: 100%;
+    height: 100%;
+}
+.sale-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.heart {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 50px;
+    color: black;
+    cursor: pointer;
+}
+
+.heart.liked {
+    color: red;
+}
+/* Limited offer */
+
+.limited_offer{
+    background-color:rgb(24, 22, 44) ;
+    width: 100%;
+    height: 370px;
+    position:relative;
+}
+.limited_offer_image{
+    position: relative;
+    left: 10%;
+    top: 30px;
+}
+.limited_offer_content{
+    position: absolute;
+    right: 200px;
+    top: 50px;
+    color: gainsboro;
+    font-size: x-large;
+}
+.limited_offer_content button{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: gainsboro;
+    color: black;
+    font-size: larger;
+    margin-top: 5px;
+}
+/* news Content */
+.news{
+    width: 100%;
+    text-align: center;
+}
+.news_content{
+    font-size: x-large;
+}
+.news_content input{
+    width: 80%;
+    padding: 10px;
+    outline: none;
+    border: 3px solid rgb(24,22,44);
+}
+.news_content button{
+    padding: 10px;
+    border-radius: 10px;
+    color: gainsboro;
+    background-color: rgb(24, 22, 44);
+    font-size: larger ;
+    margin-top: 15px;
+    outline: none;
+}
+/* Footer */
+.footer{
+    background-color: rgb(24, 22, 44);
+    height: 370px;
+}
+.footer_contents{
+    color: gainsboro;
+    margin-left: 30px;
+    font-size: x-large;
+    position: relative;
+    top: 40px;
+}
+.footer_contents img{
+    height: 50px;
+    margin-left: 30px;
+}
+.footer_contents p{
+    margin-top: 50px;
+}
+@media screen and (max-width:1280px){
+   body{
+    background-color: grey;
+   }
+    .slide-image{
+        max-height: 500px;
+    }
+   .text h1{
+    margin: 0;
+   }
+    .container-1{
+        margin-top: 20px;
+        gap: 20px;
+    }
+    .con-2{
+        width: 200px;
+    }
+    .card{
+        margin-left: 30px;
+        height: 250px;
+        width: 200px;
+    }
+    .image{
+        height: 100%;
+        width:100%;
+    }
+    .limited_offer_image{
+        left: 30px;
+    }
+    .limited_offer_content{
+        font-size: large;
+        right: 3%;
+    }
+    .footer_contents p{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:1024px) {
+    body{
+        background-color: aquamarine;
+    }
+   .offer p,h1{
+        font-size: 13px;
+    }
+    #offer_close{
+        margin-right: 40px;
+    }
+    .nav-1 h1{
+        font-size: 32px;
+    }
+    .nav-1_details{
+        margin-left: 40px;
+    }
+    .nav-1_details p{
+        font-size: 12px;
+    }
+    .slide-image{
+        max-height: 350px;
+    }
+    .text{
+        width:90%;
+    }
+    .text h1,p,button{
+        font-size: 16px;
+        margin: 0;
+    }
+    #dis_button{
+        padding: 5px;
+        font-size: small;
+        margin-bottom: 30px;
+    }
+    .prev,.next{
+        font-size: 40px;
+    }
+    .brands_img img{
+        height: 50px;
+    }
+    .brands_img p{
+        font-size: 14px;
+    }
+        .container-1{
+        margin-top: 20px;
+        gap: 20px;
+    }
+    .con-2{
+        width:150px ;
+    }
+    .limited_offer_image{
+        left: 20px;
+    }
+    .limited_offer_content h1{
+        font-size: large;
+    }
+    .limited_offer_content{
+        font-size: 15px;
+        right: 3%;
+    }
+    .news_content h1{
+        font-size: larger;
+    }
+    .news{
+        margin-top: 30px;
+    }
+    .footer_contents img{
+        margin-top: 15px;
+    }
+    .footer_contents h1,p{
+        font-size: larger;
+    }
+}
+
+@media screen and (max-width:640px) {
+    body{
+        background-color: beige;
+    }
+    .offer p,h1{
+        font-size: 8px;
+    }
+    #offer_close{
+        margin-right: 40px;
+    }
+    .nav-1_details{
+        display: none;
+    }
+    .nav-1 h1{
+        font-size: 32px;
+    }
+    #menubar{
+        display: block;
+    }
+    .slide-image{
+        max-height: 150px;
+    }
+    .text{
+        width:90%;
+    }
+    .text h1,p,button{
+        font-size: 16px;
+        margin: 0;
+    }
+    #dis_button{
+        padding: 5px;
+        font-size: small;
+        margin-bottom: 30px;
+    }
+    .prev,.next{
+        font-size: 40px;
+    }
+    .brands_img img{
+        height: 20px;
+    }
+    .brands_img p{
+        font-size: 14px;
+    }
+    .container-1{
+        margin-top: 20px;
+        gap: 20px;
+    }
+    .con-2{
+        margin-top: 10px;
+        width: 80px;
+    }
+    .con-2 img{
+        height: 20px;
+    }
+    .con-2 p{
+        font-size: 7px;
+    }
+    .sub-container-1 h1,.sub-container-2 p {
+        font-size: 20px;
+    }
+    .new_arrivals{
+        margin-top: 50px;
+    }
+    .new_arrivals h1{
+        font-size: 20px;
+    }
+    .new_arrivals_shirts{
+        margin-top: 50px;
+    }
+    .card{
+        height: 150px;
+        width:150px;
+    }
+    .card button{
+        padding: 5px;
+        font-size: 10px;
+        width: 70px;
+    }
+    #most_wanted{
+        margin-top: 50px;
+    }
+    #most_wanted h1{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .product-card{
+        height: 150px;
+        width: 150px;
+    }
+    .limited_offer{
+        height: 220px;
+    }
+    .limited_offer_image img{
+        height: 150px;
+        width: 250px;
+    }
+    .limited_offer_content{
+        top: 10%;
+        left: 60%;
+    }
+    .limited_offer_content h1,p{
+        font-size: 10px;
+        margin: 0;
+    }
+    .limited_offer_content button{
+        font-size: small;
+    }
+    .news_content p{
+        font-size: 15px;
+    }
+    .news_content input{
+        margin-top: 20px;
+    }
+    .news_content button{
+        font-size:small ;
+    }
+    .footer{
+        height: 300px;
+    }
+    .footer_contents img{
+        margin-top: 25px;
+    }
+    
+}
+@media screen and (max-width:425px) {
+    #menu_close{
+        position: relative;
+        right: 50px;
+    }
+    .text button{
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+    .brands_img img{
+        height: 15px;
+    }
+    .brands_img p{
+        font-size: 7px;
+    }
+    .card{
+        display: flex;
+        justify-content: flex-start ;
+        width: 100%;
+        height: 100px;
+    }
+    .limited_offer_image img{
+        width: 200px;
+    }
+    .limited_offer_content{
+        top: 50px;
+        font-size: 10px;
+        left: 250px;
+    }
+    .con-2{
+        width: 60px;
+    }
+}
